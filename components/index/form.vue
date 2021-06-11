@@ -16,7 +16,6 @@
       <v-col cols="12" md="2" lg="2" >
         <v-text-field
           color="primary"
-          tile
           label="Nome"
           outlined
           dark
