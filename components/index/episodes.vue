@@ -1,5 +1,91 @@
 <template>
-  <v-container>
-    O que vai acontecer?
+  <v-container class="accent" fluid py-16>
+    <v-row>
+      <v-col cols="12" class="d-flex align-center flex-column">
+        <div class="primary--text text-uppercase font-weight-bold text-h4 mb-6">O que vai acontecer?</div>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col
+        cols="12"
+        md="4"
+        lg="4"
+        v-for="card in cardsEpisodes"
+        :key="card.episode"
+        class="d-flex justify-center"
+      >
+      <div class="c-episode">
+        <div
+          :style="`background: #ffffff`"
+          class="episode pa-10"
+        >
+          <div class="title font-weight-bold text-uppercase text-left primary--text">
+            {{card.episode}}
+          </div>
+          <v-icon
+            color="primary"
+            medium
+          >
+            mdi-lock
+          </v-icon>
+        </div>
+
+        <div class="c-description primary--text my-3">
+          {{card.description}}
+        </div>
+        <div class="c-description white--text mb-6">
+          {{card.text}}
+        </div>
+      </div>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
+
+<script>
+export default {
+  data: () => {
+    return {
+      cardsEpisodes: [
+        {
+          img: "",
+          episode: "Episodio 1",
+          description: "Itaque commodi quod debitis aliquam error id rerum laborum",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+        },
+        {
+          img: "",
+          episode: "Episodio 1",
+          description: "Itaque commodi quod debitis aliquam error id rerum laborum",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+        },
+        {
+          img: "",
+          episode: "Episodio 1",
+          description: "Itaque commodi quod debitis aliquam error id rerum laborum",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+        },
+
+      ]
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+  .c-episode{
+   display: flex;
+   flex-direction: column;
+  }
+  .episode {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .c-description {
+    width: 240px;
+    margin: 0 auto;
+  }
+</style>
