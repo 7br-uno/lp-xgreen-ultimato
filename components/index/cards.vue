@@ -1,12 +1,13 @@
 <template>
   <div class="black">
     <v-container pb-16>
+
       <v-row>
         <v-col cols="12" class="d-flex align-center flex-column">
           <div
             class="primary--text text-uppercase text-h5 description text-center"
           >
-            Por que você <b>não pode</b> perder essa?
+            Por que você <span><img src="/img/texto_chamada _naopode.png" class="img-nao-pode"></span> perder essa?
           </div>
         </v-col>
       </v-row>
@@ -44,7 +45,7 @@
               color="grey darken-3"
               class="white--text rounded-md pa-7 mb-3 c-card"
             >
-              <img :src="card.img" alt="" />
+              <img :src="card.img" class="mb-2"/>
               <p>
                 {{ card.desc }}
               </p>
@@ -62,27 +63,27 @@ export default {
     return {
       cards: [
         {
-          img: "/img/icone_robozao_televisao_01.png",
+          img: "/img/01_np_dinheiro.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/icone_robozao_televisao_01.png",
+          img: "/img/02_np_dinheiro.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/icone_robozao_televisao_01.png",
+          img: "/img/03_np_celular.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/icone_robozao_televisao_01.png",
+          img: "/img/04_np_dinheiro.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/icone_robozao_televisao_01.png",
+          img: "/img/05_np_relogio.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/icone_robozao_televisao_01.png",
+          img: "/img/06_np_estrategia.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
       ],
@@ -105,4 +106,5 @@ export default {
   flex-direction: column;
   text-align: center;
 }
+
 </style>

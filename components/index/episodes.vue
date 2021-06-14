@@ -19,15 +19,15 @@
           :style="`background: #ffffff`"
           class="episode pa-10"
         >
-          <div class="title font-weight-bold text-uppercase text-left primary--text">
-            {{card.episode}}
+          <div>
+            <img :src="card.episode" alt="">
           </div>
-          <v-icon
-            color="primary"
-            medium
-          >
-            mdi-lock
-          </v-icon>
+          <div v-if="card.episode === '' " class="title font-weight-bold text-uppercase text-left primary--text" >
+            {{card.title}}
+          </div>
+          <div>
+              <img :src="card.cadeado" alt="">
+          </div>
         </div>
 
         <div class="c-description primary--text my-3">
@@ -48,22 +48,23 @@ export default {
     return {
       cardsEpisodes: [
         {
-          img: "",
-          episode: "Episodio 1",
+          episode: "/img/ep_01.png",
           description: "Itaque commodi quod debitis aliquam error id rerum laborum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+          cadeado:"/img/cadeado_aberto.png"
         },
         {
-          img: "",
-          episode: "Episodio 1",
+          episode: "/img/ep_02.png",
           description: "Itaque commodi quod debitis aliquam error id rerum laborum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+          cadeado:"/img/cadeado_aberto.png"
         },
         {
-          img: "",
-          episode: "Episodio 1",
+          episode: '',
+          title: "03/07 - 19h",
           description: "Itaque commodi quod debitis aliquam error id rerum laborum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+          cadeado:"/img/cadeado_fechado.png"
         },
 
       ]

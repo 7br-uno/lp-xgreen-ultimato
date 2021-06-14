@@ -28,7 +28,7 @@
     <v-row>
       <v-col cols="4" class="d-flex justify-center">
         <div class="d-flex align-center">
-          <img src="/img/logo_xgreen_rodape.png" alt=""/>
+          <img src="/img/logo_xg.png" alt=""/>
         </div>
       </v-col>
       <v-col cols="6" class="white--text">
