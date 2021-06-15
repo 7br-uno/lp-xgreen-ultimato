@@ -3,7 +3,7 @@
     <v-container py-16>
       <v-row >
         <v-col cols="12" class="d-flex justify-center primary--text text-h2 font-weight-bold text-uppercase pb-0 mt-16">
-          Jota money
+          <img src="/img/titulo_jotamoney.png" alt="">
         </v-col>
       </v-row>
       <v-row>
