@@ -1,21 +1,16 @@
 <template>
-  <div class="black">
-    <v-container pb-16>
-      <v-row>
-        <v-col cols="12" class="d-flex align-center flex-column">
-          <div
-            class="primary--text text-uppercase text-h5 description text-center"
-          >
-            Por que você
-            <span
-              ><img
-                src="/ultimato/img/texto_chamada _naopode.png"
-                class="img-nao-pode"
-            /></span>
-            perder essa?
-          </div>
-        </v-col>
-      </v-row>
+  <div class="black py-12">
+    <v-container>
+      <div
+        class="primary--text text-uppercase text-h5 mb-8 text-center"
+      >
+        <span class="wp-nw pb-3">Por que você</span>
+        <img
+          src="/ultimato/img/texto_chamada _naopode.png"
+          style="vertical-align: middle"
+        />
+        <span class="wp-nw">perder essa?</span>
+      </div>
       <v-row>
         <v-col cols="12" class="d-flex align-center flex-column">
           <div
@@ -42,11 +37,9 @@
           v-for="card in cards"
           :key="card.desc"
         >
-          <v-hover open-delay="200" v-slot="{ hover }">
+          <v-hover v-slot="{ hover }">
             <v-card
-              :elevation="hover ? 16 : 2"
-              :class="{ 'on-hover': hover }"
-              color="grey darken-3"
+              :color="hover ? 'grey darken-4' : 'grey darken-3'"
               class="white--text rounded-md pa-7 mb-3 c-card"
             >
               <img :src="card.img" class="mb-2" />
@@ -97,10 +90,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.description {
-  width: 700px;
+.wp-nw{
+  white-space: nowrap;
 }
-
 .c-card {
   height: 200px;
   width: 300px;
