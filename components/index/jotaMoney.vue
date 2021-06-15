@@ -7,21 +7,21 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" class="d-flex justify-center white--text  mb-16 pl-16">
-          Lorem ipsum, dolor sit amet
+        <v-col cols="12" class="d-flex justify-center white--text text-body-2 mb-16 pl-16">
+          J. Money, fundador da X-Green!
         </v-col>
       </v-row>
       <v-row>
-        <v-col offset="3" class="d-flex  grey--text text--lighten-1  mt-16 pb-0">
+        <v-col offset="3" class="d-flex  grey--text text--lighten-1 text-body-1 mt-16 pb-0">
           <div class="desc mx-auto">
-            Lorem ipsum, dolor sit amet Lorem ipsum, dolor sit amet
+            "Vou te contar a minha história e como fazer você ganhar dinheiro
           </div>
         </v-col>
       </v-row>
       <v-row>
-        <v-col offset="3" class="d-flex  primary--text font-weight-bold mb-16 pl-16">
+        <v-col offset="3" class="d-flex  primary--text font-weight-bold mb-16 text-body-1 pl-16">
          <div class="desc mx-auto">
-            Lorem ipsum, dolor sit amet Lorem ipsum, dolor sit amet
+            se tornar o maior terror da Denise.”
           </div>
         </v-col>
       </v-row>
