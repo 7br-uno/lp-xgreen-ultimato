@@ -1,45 +1,43 @@
 <template>
-  <v-container class="accent" fluid py-16>
-    <v-row>
-      <v-col cols="12" class="d-flex align-center flex-column">
-        <div class="primary--text text-uppercase font-weight-bold text-h4 mb-6">O que vai acontecer?</div>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col
-        cols="12"
-        md="4"
-        lg="4"
-        v-for="card in cardsEpisodes"
-        :key="card.episode"
-        class="d-flex justify-center"
-      >
-      <div class="c-episode">
-        <div
-          :style="`background: #ffffff`"
-          class="episode pa-10"
+  <div class="accent">
+    <v-container py-16>
+      <v-row>
+        <v-col cols="12" class="d-flex align-center flex-column">
+          <div class="primary--text text-uppercase font-weight-bold text-h4 mb-6">O que vai acontecer?</div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col
+          cols="12"
+          md="4"
+          lg="4"
+          v-for="card in cardsEpisodes"
+          :key="card.episode"
+          class="d-flex justify-center"
         >
-          <div>
-            <img :src="card.episode" alt="">
+        <div class="c-episode">
+          <div class="white episode pa-10">
+            <div>
+              <img :src="card.episode" alt="">
+            </div>
+            <div v-if="card.episode === '' " class="title font-weight-bold text-uppercase text-left primary--text" >
+              {{card.title}}
+            </div>
+            <div>
+                <img :src="card.cadeado" alt="">
+            </div>
           </div>
-          <div v-if="card.episode === '' " class="title font-weight-bold text-uppercase text-left primary--text" >
-            {{card.title}}
+          <div class="c-description primary--text font-weight-bold my-3">
+            {{card.description}}
           </div>
-          <div>
-              <img :src="card.cadeado" alt="">
+          <div class="c-description white--text mb-6">
+            {{card.text}}
           </div>
         </div>
-
-        <div class="c-description primary--text my-3">
-          {{card.description}}
-        </div>
-        <div class="c-description white--text mb-6">
-          {{card.text}}
-        </div>
-      </div>
-      </v-col>
-    </v-row>
-  </v-container>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
