@@ -3,9 +3,9 @@
     <v-container py-16>
       <div class="banner">
         <header class="white--text d-flex justify-center">
-          <img src="/img/logo300x300_fundotransparente.png" />
+          <img src="/ultimato/img/logo300x300_fundotransparente.png" />
         </header>
-          <img src="/img/bg_home_monstros.png" />
+          <img src="/ultimato/img/bg_home_monstros.png" />
         <div class="bg-img">
           <v-row>
             <v-col cols="12" class="d-flex align-center flex-column">

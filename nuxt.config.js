@@ -1,6 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  router: {
+    base: '/ultimato/'
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 

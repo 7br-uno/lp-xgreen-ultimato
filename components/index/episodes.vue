@@ -48,23 +48,23 @@ export default {
     return {
       cardsEpisodes: [
         {
-          episode: "/img/ep_01.png",
+          episode: "/ultimato/img/ep_01.png",
           description: "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          cadeado:"/img/cadeado_aberto.png"
+          cadeado:"/ultimato/img/cadeado_aberto.png"
         },
         {
-          episode: "/img/ep_02.png",
+          episode: "/ultimato/img/ep_02.png",
           description: "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          cadeado:"/img/cadeado_aberto.png"
+          cadeado:"/ultimato/img/cadeado_aberto.png"
         },
         {
           episode: '',
           title: "03/07 - 19h",
           description: "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          cadeado:"/img/cadeado_fechado.png"
+          cadeado:"/ultimato/img/cadeado_fechado.png"
         },
 
       ]

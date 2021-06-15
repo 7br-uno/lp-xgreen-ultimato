@@ -7,7 +7,7 @@
           <div
             class="primary--text text-uppercase text-h5 description text-center"
           >
-            Por que você <span><img src="/img/texto_chamada _naopode.png" class="img-nao-pode"></span> perder essa?
+            Por que você <span><img src="/ultimato/img/texto_chamada _naopode.png" class="img-nao-pode"></span> perder essa?
           </div>
         </v-col>
       </v-row>
@@ -63,27 +63,27 @@ export default {
     return {
       cards: [
         {
-          img: "/img/01_np_dinheiro.png",
+          img: "/ultimato/img/01_np_dinheiro.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/02_np_dinheiro.png",
+          img: "/ultimato/img/02_np_dinheiro.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/03_np_celular.png",
+          img: "/ultimato/img/03_np_celular.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/04_np_dinheiro.png",
+          img: "/ultimato/img/04_np_dinheiro.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/05_np_relogio.png",
+          img: "/ultimato/img/05_np_relogio.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "/img/06_np_estrategia.png",
+          img: "/ultimato/img/06_np_estrategia.png",
           desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
       ],
