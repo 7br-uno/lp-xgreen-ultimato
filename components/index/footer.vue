@@ -6,7 +6,7 @@
           <div
             class="white--text text-uppercase text-center text-body-2 mx-auto"
           >
-            Lorem ipsum dolor sit
+            Garanta já sua vaga
           </div>
         </v-col>
       </v-row>
@@ -26,22 +26,28 @@
       <my-form />
     </div>
     <v-row>
-      <v-col cols="4" class="d-flex justify-center">
-        <div class="d-flex align-center">
-          <img src="/ultimato/img/logo_xg.png" alt=""/>
+      <v-col
+        offset-md="3"
+        lg="6"
+        md="6"
+        class="d-flex justify-center flex-xs-column align-xs-center"
+      >
+        <div class="d-flex align-center mr-8">
+          <img src="/ultimato/img/logo_xg.png" alt="" />
         </div>
-      </v-col>
-      <v-col cols="6" class="white--text">
-        <p class="font text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint
-        minus amet odio culpa natus illo repellendus optio! Similique rerum
-        pariatur voluptas veritatis laboriosam dicta deserunt aspernatur iste
-        quod reprehenderit?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint
-        minus amet odio culpa natus illo repellendus optio! Similique rerum
-        pariatur voluptas veritatis laboriosam dicta deserunt aspernatur iste
-        quod reprehenderit?
-        </p>
+        <div class="white--text">
+          <p class="font text-justify">
+            Resultados passados não são garantias de resultadosfuturos. As
+            informaçõesdeste site destinam-se ao seu conhecimento geral enão
+            garantimos resultadosespecíficos e valores exatos de lucro. Os
+            resultadossão de inteiraresponsabilidade do assinante e/ou aluno que
+            realizaas suas própriasoperações.O nosso conteúdo tem fins de
+            conhecimento e cultura.São voltados àintrodução aos conhecimentos em
+            educação e mercadosfinanceiros, dentrodos melhores valores éticos e
+            morais, com o objetivode promover ashabilidades necessárias para o
+            correto entendimentoem educação financeira.
+          </p>
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -57,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.font{
+.font {
   font-size: 12px;
 }
 </style>

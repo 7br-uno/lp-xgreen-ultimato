@@ -5,7 +5,7 @@
         <header class="white--text d-flex justify-center">
           <img src="/ultimato/img/logo300x300_fundotransparente.png" />
         </header>
-          <img src="/ultimato/img/bg_home_monstros.png" />
+        <img src="/ultimato/img/bg_home_monstros.png" />
         <div class="bg-img">
           <v-row>
             <v-col cols="12" class="d-flex align-center flex-column">
@@ -27,19 +27,36 @@
               <div
                 class="
                   white--text
-                  text-uppercase text-center text-body-2
+                  text-uppercase text-center text-body-1
                   description
                   mx-auto
                   mb-6
                 "
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                quasi aliquid quod nobis quo saepe laborum ratione nemo, quia
-                culpa repudiandae cumque
+                <b>Saiba como lucrar com investimentos esportivos</b> e como a
+                nossametodologia aterrorizou o mercado e vai transformara sua
+                vida
               </div>
             </v-col>
           </v-row>
           <my-form />
+          <v-row>
+            <v-col cols="12" class="d-flex align-center flex-column mt-2">
+              <div
+                class="
+                  white--text
+                  text-center text-body-2
+                  description
+                  mx-auto
+                  mb-6
+                "
+              >
+                <b>Evento online e gratuito.</b> Ao se cadastrar,você aceita
+                os <span class="primary--text">Termos de Uso,Políticade Privacidade</span>, o uso de cookies e o
+                envio decomunicações nos termos da LGPD.
+              </div>
+            </v-col>
+          </v-row>
         </div>
       </div>
     </v-container>
@@ -57,7 +74,7 @@ export default {
 
 <style lang="scss" scoped>
 .description {
-  width: 600px;
+  width: 520px;
 }
 
 .banner {
