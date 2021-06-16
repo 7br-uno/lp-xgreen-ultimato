@@ -16,17 +16,19 @@
           class="d-flex justify-center"
         >
         <div class="c-episode">
-          <div class="white episode pa-10">
-            <div>
-              <img :src="card.episode" alt="">
-            </div>
-            <div v-if="card.episode === '' " class="title font-weight-bold text-uppercase text-left primary--text" >
-              {{card.title}}
-            </div>
-            <div>
-                <img :src="card.cadeado" alt="">
-            </div>
+          <div class="white episode">
+            <div class="container-cadeado">
+              <div>
+                <img :src="card.episode" alt="">
+              </div>
+              <div v-if="card.episode === '' " class="title font-weight-bold text-uppercase text-left primary--text" >
+                {{card.title}}
+              </div>
+              <div>
+                  <img :src="card.cadeado" alt="">
+              </div>
           </div>
+            </div>
           <div class="c-description primary--text font-weight-bold my-3">
             {{card.description}}
           </div>
@@ -81,10 +83,25 @@ export default {
     width: 300px;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
   }
+
   .c-description {
     width: 240px;
     margin: 0 auto;
   }
+
+  .container-cadeado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 90px;
+    padding: 0 40px;
+
+    &:hover {
+      background-color:#B9F6CA;
+      transition: 0.4s;
+    }
+  }
 </style>
+
