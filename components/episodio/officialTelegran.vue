@@ -45,7 +45,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" class="d-flex justify-center">
+        <v-col cols="12" class="d-flex justify-center mb-16">
           <img
             src="/ultimato/imgEpisodes/hastag_ultimatoxgreen.png"
             alt="oferta especial"
