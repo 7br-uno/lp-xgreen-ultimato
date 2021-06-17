@@ -8,15 +8,14 @@
             src="/ultimato/imgEpisodes/img_oficial.png"
             style="vertical-align: middle"
           />
-          <span class="wp-nw">do telegran</span>
+          <span class="wp-nw">do telegram</span>
         </div>
       </v-row>
       <v-row class="d-flex justify-center">
         <v-col lg="6" md="8" sm="6" cols="10" class="d-flex justify-center">
           <div class="text-body-2 white--text text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-            natus, modi eveniet delectus nesciunt officiis laboriosam
-            consectetur.
+            Se você ainda não entrou no grupo do Telegram, ele é o nosso Canal
+            Oficial de Comunicação do evento.
           </div>
         </v-col>
       </v-row>
@@ -34,13 +33,13 @@
       </v-row>
       <v-row class="d-flex justify-center">
         <div class="primary--text text-uppercase text-h5 text-center">
-          Deixe aqui seu comentário
+          Deixe aqui seu comentário!
         </div>
       </v-row>
       <v-row class="d-flex justify-center mt-0">
         <v-col cols="12" class="d-flex justify-center">
           <div class="text-body-2 white--text text-center">
-            O que achou desse episódio e coloque a hashtag
+            Diga o que achou desse episódio e coloque a hashtag
           </div>
         </v-col>
       </v-row>

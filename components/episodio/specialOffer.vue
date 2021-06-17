@@ -15,7 +15,7 @@
         </v-col>
         <v-col cols="12" class="d-flex justify-center pt-0">
           <div class="text-body-2 font-weight-bold">
-            Aproveite é só HOJE até as 23h59
+            Aproveite! É só HOJE até as 23h59.
           </div>
         </v-col>
       </v-row>
