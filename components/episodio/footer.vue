@@ -2,6 +2,18 @@
   <div class="accent py-16">
     <v-container>
       <v-row>
+        <v-col cols="12" class="d-flex justify-center">
+          <v-card
+            height="600"
+            width="100%"
+            style="marginTop: -200px"
+            class="rounded-lg"
+          >
+
+          </v-card>
+        </v-col>
+      </v-row>
+      <v-row>
         <v-col cols="12" sm="2" class="d-flex justify-center">
           <div class="d-flex align-center">
             <img src="/ultimato/img/logo_xg.png" alt="logo x-green"/>
