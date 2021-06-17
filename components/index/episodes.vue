@@ -10,11 +10,12 @@
           </div>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row class="d-flex justify-center">
         <v-col
           cols="12"
-          md="4"
+          md="6"
           lg="4"
+          sm="6"
           v-for="card in cardsEpisodes"
           :key="card.episode"
           class="d-flex justify-center"
@@ -39,7 +40,7 @@
                 </v-expand-transition>
                 <div class="container-cadeado">
                   <div>
-                    <img v-if="compareDates(card.liberado)" :src="card.episode" alt="" />
+                    <img v-if="compareDates(card.liberado)" :src="card.episode"/>
                   </div>
                   <div
                     v-if="!compareDates(card.liberado)"
@@ -53,7 +54,7 @@
                     {{ card.title }}
                   </div>
                   <div>
-                    <img v-if="compareDates(card.liberado)" src="/ultimato/img/cadeado_aberto.png" alt="" />
+                    <img v-if="compareDates(card.liberado)" src="/ultimato/img/cadeado_aberto.png" />
                     <img v-else src="/ultimato/img/cadeado_fechado.png" alt="">
                   </div>
                 </div>
@@ -79,21 +80,21 @@ export default {
     return {
       cardsEpisodes: [
         {
-          title: "03/07 - 19h",
+          title: "01/07 - 19h",
           episode: "/ultimato/img/ep_01.png",
           description:
-            "Itaque commodi quod debitis aliquam error id rerum laborum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          liberado: '16/06/2021',
+            "A origem",
+          text: "Conheça J. Money e saiba por que esta metodologia é para você!",
+          liberado:'2021-07-01 19:00:00',
           img: "/img/bg_jotamoney.png",
         },
         {
-          title: "03/07 - 19h",
+          title: "02/07 - 19h",
           episode: "/ultimato/img/ep_02.png",
           description:
-            "Itaque commodi quod debitis aliquam error id rerum laborum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          liberado: '02/07/2021',
+            "Metodologia Fast Green®",
+          text: "Saiba como funciona a metodologia mais revolucionária do mercado.",
+          liberado:'2021-07-02 19:00:00',
           img: "/img/bg_jotamoney.png",
         },
         {
@@ -102,7 +103,16 @@ export default {
           description:
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          liberado:'03/07/2021',
+          liberado:'2021-07-03 19:00:00',
+          img: "/img/bg_jotamoney.png",
+        },
+        {
+          title: "04/07 - 19h",
+          episode: "/ultimato/img/ep_03.png",
+          description:
+            "Curso Método Fast Green®",
+          text: "Conheça o curso mais completo do mercado de investimentos esportivos.",
+          liberado:'2021-07-04 19:00:00',
           img: "/img/bg_jotamoney.png",
         },
       ],
@@ -110,10 +120,9 @@ export default {
   },
   methods:{
     compareDates(date){
-      let parts = date.split('/')
-      let today = new Date()
-      date = new Date(parts[2], parts[1] - 1, parts[0])
-      return date >= today
+      const date1 = new Date();
+      const date2 = new Date(date);
+      return date1.getTime() >= date2.getTime()
     }
   },
 };

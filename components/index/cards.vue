@@ -22,8 +22,8 @@
               mb-6
             "
           >
-            Você vai entender como a X-Green, desde 2018, teverendimento demais
-            de 2500% e conseguiu lucro em mais de 95% dosdias.
+            Você vai entender como a X-Green, desde 2018, teve rendimento de mais
+            de 2.500% e conseguiu lucro em mais de 95% dos dias.
           </div>
         </v-col>
       </v-row>
@@ -81,7 +81,7 @@ export default {
         },
         {
           img: "/ultimato/img/06_np_estrategia.png",
-          desc: "Pare de ser enganado por tipster que só perdem",
+          desc: "Pare de ser enganado por tipsters que só perdem",
         },
       ],
     };
