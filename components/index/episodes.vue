@@ -39,10 +39,10 @@
                 </v-expand-transition>
                 <div class="container-cadeado">
                   <div>
-                    <img v-if="card.liberado" :src="card.episode" alt="" />
+                    <img v-if="compareDates(card.liberado)" :src="card.episode" alt="" />
                   </div>
                   <div
-                    v-if="!card.liberado"
+                    v-if="!compareDates(card.liberado)"
                     class="
                       title
                       font-weight-bold
@@ -53,7 +53,7 @@
                     {{ card.title }}
                   </div>
                   <div>
-                    <img v-if="card.liberado" src="/ultimato/img/cadeado_aberto.png" alt="" />
+                    <img v-if="compareDates(card.liberado)" src="/ultimato/img/cadeado_aberto.png" alt="" />
                     <img v-else src="/ultimato/img/cadeado_fechado.png" alt="">
                   </div>
                 </div>
@@ -74,21 +74,8 @@
 </template>
 
 <script>
-
-
-
 export default {
-  method: {
-  compareDates: function(date){
-        let parts = date.split('/')
-        let today = new Date()
-
-        date = new Date(parts[2], parts[1] - 1, parts[0])
-        return date >= today ? true : false
-    }
-  },
-
-  data: () => {
+  data(){
     return {
       cardsEpisodes: [
         {
@@ -97,7 +84,7 @@ export default {
           description:
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          liberado: this.compareDates('01/07/2021'),
+          liberado: '16/06/2021',
           img: "/img/bg_jotamoney.png",
         },
         {
@@ -106,7 +93,7 @@ export default {
           description:
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          liberado: this.compareDates('02/07/2021'),
+          liberado: '02/07/2021',
           img: "/img/bg_jotamoney.png",
         },
         {
@@ -115,11 +102,19 @@ export default {
           description:
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          liberado: this.compareDates('03/07/2021'),
+          liberado:'03/07/2021',
           img: "/img/bg_jotamoney.png",
         },
       ],
     };
+  },
+  methods:{
+    compareDates(date){
+      let parts = date.split('/')
+      let today = new Date()
+      date = new Date(parts[2], parts[1] - 1, parts[0])
+      return date >= today
+    }
   },
 };
 </script>
