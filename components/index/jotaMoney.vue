@@ -1,14 +1,16 @@
 <template>
-  <div class="black">
+  <div :class="$vuetify.breakpoint.smAndUp ? 'bg-jmoney' : 'bg-personagem'">
     <v-container py-16>
       <v-row >
         <v-col cols="12" class="d-flex justify-center primary--text text-h2 font-weight-bold text-uppercase pb-0 mt-16">
-          <img src="/ultimato/img/titulo_jotamoney.png" alt="">
+          <img v-if="!$vuetify.breakpoint.smAndUp" src="/ultimato/img/titulo_jotamoney.png" alt="">
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="12" class="d-flex justify-center white--text text-body-2 mb-16 pl-16">
-          J. Money, fundador da X-Green!
+      <v-row class="">
+        <v-col cols="12" class="d-flex justify-center white--text text-body-2 mb-16">
+          <div :class="$vuetify.breakpoint.smAndUp ? 'jmoney' : ''">
+            J. Money, fundador da X-Green!
+          </div>
         </v-col>
       </v-row>
       <v-row>
@@ -32,5 +34,28 @@
 <style lang="scss" scoped>
 .desc {
   width: 300px;
+}
+
+.bg-jmoney {
+  background: url("/img/bg_jotamoney_novo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.bg-personagem {
+  background: url("/img/bg_jotamoney.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jmoney {
+  margin-top: -40px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 </style>

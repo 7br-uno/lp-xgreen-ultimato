@@ -21,7 +21,10 @@
         >
           <div class="c-episode">
             <v-hover v-slot="{ hover }">
-              <v-card class="white episode">
+              <v-card
+                class="episode"
+              >
+              <div :style="`background: url(${card.img}); background-size: cover; background-position: center`" class="container-hover">
                 <v-expand-transition>
                   <div
                     v-if="hover"
@@ -31,7 +34,7 @@
                       accent-2
                       v-card--reveal
                     "
-                    style="height: 25%"
+                    style="height: 30%"
                   />
                 </v-expand-transition>
                 <div class="container-cadeado">
@@ -53,6 +56,7 @@
                     <img :src="card.cadeado" alt="" />
                   </div>
                 </div>
+              </div>
               </v-card>
             </v-hover>
             <div class="c-description primary--text font-weight-bold my-3">
@@ -79,6 +83,7 @@ export default {
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
           cadeado: "/ultimato/img/cadeado_aberto.png",
+          img: "/img/bg_jotamoney.png",
         },
         {
           episode: "/ultimato/img/ep_02.png",
@@ -86,6 +91,7 @@ export default {
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
           cadeado: "/ultimato/img/cadeado_aberto.png",
+          img: "/img/bg_jotamoney.png",
         },
         {
           episode: "",
@@ -94,6 +100,7 @@ export default {
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
           cadeado: "/ultimato/img/cadeado_fechado.png",
+          img: "/img/bg_jotamoney.png",
         },
       ],
     };
@@ -112,11 +119,11 @@ export default {
   display: flex;
   flex-direction: column;
 }
+
 .episode {
   height: 400px;
   width: 300px;
-  display: flex;
-  align-items: flex-end;
+  overflow: hidden;
 }
 
 .c-description {
@@ -131,6 +138,19 @@ export default {
   width: 300px;
   height: 90px;
   padding: 0 40px;
+}
+.container-hover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.2);
+    .container-cadeado {
+      padding: 70px 40px;
+    }
+  }
 }
 </style>
 
