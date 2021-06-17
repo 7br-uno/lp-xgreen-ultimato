@@ -39,10 +39,10 @@
                 </v-expand-transition>
                 <div class="container-cadeado">
                   <div>
-                    <img :src="card.episode" alt="" />
+                    <img v-if="card.liberado" :src="card.episode" alt="" />
                   </div>
                   <div
-                    v-if="card.episode === ''"
+                    v-if="!card.liberado"
                     class="
                       title
                       font-weight-bold
@@ -53,7 +53,8 @@
                     {{ card.title }}
                   </div>
                   <div>
-                    <img :src="card.cadeado" alt="" />
+                    <img v-if="card.liberado" src="/ultimato/img/cadeado_aberto.png" alt="" />
+                    <img v-else src="/ultimato/img/cadeado_fechado.png" alt="">
                   </div>
                 </div>
               </div>
@@ -73,33 +74,48 @@
 </template>
 
 <script>
+
+
+
 export default {
+  method: {
+  compareDates: function(date){
+        let parts = date.split('/')
+        let today = new Date()
+
+        date = new Date(parts[2], parts[1] - 1, parts[0])
+        return date >= today ? true : false
+    }
+  },
+
   data: () => {
     return {
       cardsEpisodes: [
         {
+          title: "03/07 - 19h",
           episode: "/ultimato/img/ep_01.png",
           description:
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          cadeado: "/ultimato/img/cadeado_aberto.png",
+          liberado: this.compareDates('01/07/2021'),
           img: "/img/bg_jotamoney.png",
         },
         {
+          title: "03/07 - 19h",
           episode: "/ultimato/img/ep_02.png",
           description:
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          cadeado: "/ultimato/img/cadeado_aberto.png",
+          liberado: this.compareDates('02/07/2021'),
           img: "/img/bg_jotamoney.png",
         },
         {
-          episode: "",
           title: "03/07 - 19h",
+          episode: "/ultimato/img/ep_03.png",
           description:
             "Itaque commodi quod debitis aliquam error id rerum laborum",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          cadeado: "/ultimato/img/cadeado_fechado.png",
+          liberado: this.compareDates('03/07/2021'),
           img: "/img/bg_jotamoney.png",
         },
       ],
