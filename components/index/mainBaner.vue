@@ -33,9 +33,7 @@
                   mb-6
                 "
               >
-                <b>Saiba como lucrar com investimentos esportivos</b> e como a
-                nossametodologia aterrorizou o mercado e vai transformara sua
-                vida
+                <b>Saiba como lucrar com investimentos esportivos</b> e como a nossa metodologia aterrorizou o mercado e vai transformara sua vida
               </div>
             </v-col>
           </v-row>
@@ -51,9 +49,7 @@
                   mb-6
                 "
               >
-                <b>Evento online e gratuito.</b> Ao se cadastrar,você aceita
-                os <span class="primary--text">Termos de Uso,Políticade Privacidade</span>, o uso de cookies e o
-                envio decomunicações nos termos da LGPD.
+                <b>Evento online e gratuito.</b> Ao se cadastrar,você aceita os <u class="primary--text">Termos de Uso, Políticade Privacidade</u>, o uso de cookies e o envio decomunicações nos termos da LGPD.
               </div>
             </v-col>
           </v-row>

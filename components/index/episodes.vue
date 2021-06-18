@@ -14,16 +14,17 @@
         <v-col
           cols="12"
           md="6"
-          lg="4"
+          lg="3"
           sm="6"
-          v-for="card in cardsEpisodes"
-          :key="card.episode"
+          v-for="(card, i) in cardsEpisodes"
+          :key="i"
           class="d-flex justify-center"
         >
           <div class="c-episode">
             <v-hover v-slot="{ hover }">
               <v-card
                 class="episode"
+                color="black"
               >
               <div :style="`background: url(${card.img}); background-size: cover; background-position: center`" class="container-hover">
                 <v-expand-transition>
@@ -40,7 +41,7 @@
                 </v-expand-transition>
                 <div class="container-cadeado">
                   <div>
-                    <img v-if="compareDates(card.liberado)" :src="card.episode"/>
+                    <img width="120" v-if="compareDates(card.liberado)" :src="card.episode"/>
                   </div>
                   <div
                     v-if="!compareDates(card.liberado)"
@@ -49,6 +50,7 @@
                       font-weight-bold
                       text-uppercase text-left
                       primary--text
+                      mr-3
                     "
                   >
                     {{ card.title }}
@@ -85,7 +87,7 @@ export default {
           description:
             "A origem",
           text: "Conheça J. Money e saiba por que esta metodologia é para você!",
-          liberado:'2021-07-01 19:00:00',
+          liberado:'2021-06-18 09:00:00', //2021-07-01 19:00:00
           img: "/img/bg_jotamoney.png",
         },
         {
@@ -101,8 +103,8 @@ export default {
           title: "03/07 - 19h",
           episode: "/ultimato/img/ep_03.png",
           description:
-            "Itaque commodi quod debitis aliquam error id rerum laborum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+            "Curso Método Fast Green®",
+          text: "Conheça o curso mais completo do mercado de investimentos esportivos.",
           liberado:'2021-07-03 19:00:00',
           img: "/img/bg_jotamoney.png",
         },
@@ -110,8 +112,8 @@ export default {
           title: "04/07 - 19h",
           episode: "/ultimato/img/ep_03.png",
           description:
-            "Curso Método Fast Green®",
-          text: "Conheça o curso mais completo do mercado de investimentos esportivos.",
+            "Itaque commodi quod debitis aliquam error id rerum laborum",
+          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
           liberado:'2021-07-04 19:00:00',
           img: "/img/bg_jotamoney.png",
         },
@@ -138,11 +140,12 @@ export default {
 .c-episode {
   display: flex;
   flex-direction: column;
+  margin: 30px;
 }
 
 .episode {
-  height: 400px;
-  width: 300px;
+  height: 350px;
+  width: 250px;
   overflow: hidden;
 }
 

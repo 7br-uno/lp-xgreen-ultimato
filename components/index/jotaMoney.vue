@@ -8,20 +8,20 @@
       </v-row>
       <v-row class="">
         <v-col cols="12" class="d-flex justify-center white--text text-body-2 mb-16">
-          <div :class="$vuetify.breakpoint.smAndUp ? 'jmoney' : ''">
+          <div class="mt-0 mt-sm-4" :class="$vuetify.breakpoint.smAndUp ? 'jmoney' : ''">
             Fundador da X-Green!
           </div>
         </v-col>
       </v-row>
       <v-row>
-        <v-col offset="3" class="d-flex  grey--text text--lighten-1 text-body-1 mt-16 pb-0">
+        <v-col offset-sm="3" class="d-flex  grey--text text--lighten-1 text-body-1 mt-16 pb-0">
           <div class="desc mx-auto">
             "Vou te contar a minha história, como fazer você ganhar dinheiro
           </div>
         </v-col>
       </v-row>
       <v-row>
-        <v-col offset="3" class="d-flex  primary--text font-weight-bold mb-16 text-body-1 pl-16">
+        <v-col offset-sm="3" class="d-flex  primary--text font-weight-bold mb-16 text-body-1 pl-16">
          <div class="desc mx-auto">
             e se tornar o maior terror da Denise.”
           </div>
@@ -33,7 +33,7 @@
 
 <style lang="scss" scoped>
 .desc {
-  width: 300px;
+  max-width: 300px;
 }
 
 .bg-jmoney {
