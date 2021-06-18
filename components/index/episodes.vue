@@ -18,9 +18,9 @@
           sm="6"
           v-for="(card, i) in cardsEpisodes"
           :key="i"
-          class="d-flex justify-center"
+          class="d-flex justify-center py-0"
         >
-          <div class="c-episode">
+          <div class="c-episode my-2">
             <v-hover v-slot="{ hover }">
               <v-card
                 class="episode"

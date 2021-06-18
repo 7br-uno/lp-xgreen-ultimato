@@ -2,10 +2,10 @@
   <div class="black">
     <v-container class="px-8 px-sm-16 py-1">
       <div class="banner">
-        <header class="white--text d-flex justify-center">
-          <img src="/ultimato/img/logo300x300_fundotransparente.png" />
+        <header class="white--text text-center text-sm-left">
+          <img class="main-logo" src="/ultimato/img/logo300x300_fundotransparente.png" />
         </header>
-        <img src="/ultimato/img/bg_home_monstros.png" />
+        <img class="mt-sm-16 pt-sm-16" src="/ultimato/img/bg_home_monstros.png" />
         <div class="bg-img">
           <v-row>
             <v-col cols="12" class="d-flex align-center flex-column">
@@ -84,5 +84,14 @@ export default {
 }
 .bg-img {
   margin-top: -120px;
+}
+@media only screen and (max-width: 600px)  {
+  .main-logo{
+    position: unset !important;
+  }
+}
+.main-logo{
+  position: absolute;
+  height: 230px;
 }
 </style>

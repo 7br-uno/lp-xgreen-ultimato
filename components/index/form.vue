@@ -55,7 +55,7 @@
           class="black--text"
           @click="process()"
         >
-          {{loading ? 'Enviando...' : 'Enviar'}}
+          {{loading ? 'Cadastrando...' : 'Cadastrar'}}
           <v-icon right>mdi-arrow-right</v-icon>
         </v-btn>
       </v-col>
