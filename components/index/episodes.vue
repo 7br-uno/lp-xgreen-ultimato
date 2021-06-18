@@ -110,10 +110,10 @@ export default {
         },
         {
           title: "04/07 - 19h",
-          episode: "/ultimato/img/ep_03.png",
+          episode: "/ultimato/img/ep_04.png",
           description:
-            "Itaque commodi quod debitis aliquam error id rerum laborum",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
+            "Oportunidade única!",
+          text: "Veja a o que preparamos para você iniciar nesta jornada junto com a gente!",
           liberado:'2021-07-04 19:00:00',
           img: "/img/bg_jotamoney.png",
         },
@@ -142,7 +142,6 @@ export default {
   flex-direction: column;
   margin: 30px;
 }
-
 .episode {
   height: 350px;
   width: 250px;
