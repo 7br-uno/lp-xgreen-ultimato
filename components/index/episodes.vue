@@ -4,7 +4,7 @@
       <v-row>
         <v-col cols="12" class="d-flex align-center flex-column">
           <div
-            class="primary--text text-uppercase font-weight-bold text-h4 mb-6"
+            class="primary--text text-uppercase font-weight-bold text-h4 mb-6 text-center"
           >
             O que vai acontecer?
           </div>
@@ -87,8 +87,8 @@ export default {
           description:
             "A origem",
           text: "Conheça J. Money e saiba por que esta metodologia é para você!",
-          liberado:'2021-06-18 09:00:00', //2021-07-01 19:00:00
-          img: "/img/bg_jotamoney.png",
+          liberado:'2021-07-01 19:00:00',
+          img: "/ultimato/img/capa_video01.png",
         },
         {
           title: "02/07 - 19h",
@@ -97,7 +97,7 @@ export default {
             "Metodologia Fast Green®",
           text: "Saiba como funciona a metodologia mais revolucionária do mercado.",
           liberado:'2021-07-02 19:00:00',
-          img: "/img/bg_jotamoney.png",
+          img: "/ultimato/img/capa_video02.png",
         },
         {
           title: "03/07 - 19h",
@@ -106,16 +106,16 @@ export default {
             "Curso Método Fast Green®",
           text: "Conheça o curso mais completo do mercado de investimentos esportivos.",
           liberado:'2021-07-03 19:00:00',
-          img: "/img/bg_jotamoney.png",
+          img: "/ultimato/img/capa_video03.png",
         },
         {
           title: "04/07 - 19h",
           episode: "/ultimato/img/ep_04.png",
           description:
             "Oportunidade única!",
-          text: "Veja a o que preparamos para você iniciar nesta jornada junto com a gente!",
+          text: "Veja o que preparamos para você iniciar nesta jornada junto com a gente!",
           liberado:'2021-07-04 19:00:00',
-          img: "/img/bg_jotamoney.png",
+          img: "/ultimato/img/capa_video04.png",
         },
       ],
     };

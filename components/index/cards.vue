@@ -1,5 +1,5 @@
 <template>
-  <div class="black py-12">
+  <div class="black pb-12">
     <v-container>
       <div
         class="primary--text text-uppercase text-h5 mb-8 text-center"
@@ -73,7 +73,7 @@ export default {
         },
         {
           img: "/ultimato/img/04_np_dinheiro.png",
-          desc: "Aprenda uma nova profissão investindo o que cabe nobolso",
+          desc: "Aprenda uma nova profissão investindo o que cabe no bolso",
         },
         {
           img: "/ultimato/img/05_np_relogio.png",

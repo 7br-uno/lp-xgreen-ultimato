@@ -14,14 +14,14 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col offset-sm="3" class="d-flex  grey--text text--lighten-1 text-body-1 mt-16 pb-0">
+        <v-col offset-sm="3" class="d-flex grey--text text--lighten-1 headline mt-0 pb-0">
           <div class="desc mx-auto">
             "Vou te contar a minha história, como fazer você ganhar dinheiro
           </div>
         </v-col>
       </v-row>
       <v-row>
-        <v-col offset-sm="3" class="d-flex  primary--text font-weight-bold mb-16 text-body-1 pl-16">
+        <v-col offset-sm="3" class="d-flex  primary--text font-weight-bold mb-16 headline pl-16">
          <div class="desc mx-auto">
             e se tornar o maior terror da Denise.”
           </div>
@@ -37,14 +37,14 @@
 }
 
 .bg-jmoney {
-  background: url("/img/bg_jotamoney_novo.jpg");
+  background: url("/ultimato/img/bg_jotamoney_novo.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
 }
 .bg-personagem {
-  background: url("/img/bg_jotamoney.png");
+  background: url("/ultimato/img/bg_jotamoney.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

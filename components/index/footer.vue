@@ -1,11 +1,11 @@
 <template>
-  <div class="accent py-16">
+  <div class="accent pb-16 pt-8">
     <v-container class="px-8 px-sm-16">
       <div class="mb-16">
         <v-row>
           <v-col cols="12" class="d-flex align-center flex-column">
             <div
-              class="white--text text-uppercase text-center text-body-2 mx-auto"
+              class="white--text text-uppercase text-center title mx-auto"
             >
               Garanta já sua vaga
             </div>
@@ -16,8 +16,8 @@
             <div
               class="
                 primary--text
-                text-uppercase text-h3 text-center
-                font-weight-bold
+                text-uppercase text-sm-h3 text-h4 text-center
+                font-weight-bold mb-5
               "
             >
               01 a 04 de julho

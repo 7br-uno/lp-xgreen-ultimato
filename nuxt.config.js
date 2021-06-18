@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - lp-xgreen-ultimato',
+    titleTemplate: '%s',
     title: 'X-GREEN: O oculto será revelado!',
     htmlAttrs: {
       lang: 'pt-br'
@@ -40,12 +40,27 @@ export default {
     ]
   },
 
+  publicRuntimeConfig: {
+    axios: {
+      credentials: true,
+      // baseURL: 'http://127.0.0.1:8000/v1/'
+      // baseURL: 'https://homologation-api.sixlaunch.com.br/v1/'
+      baseURL: 'https://api.sixlaunch.com.br/v1/'
+    }
+  },
+
+  env: {
+    token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMjcuMC4wLjE6ODAwMFwvdjFcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNjI0MDMyMzAwLCJuYmYiOjE2MjQwMzIzMDAsImp0aSI6ImgySjl6NEYydDlsMWFhdW0iLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.Lzh7ivNCN7OfcTyXpKOGih6r4orQ7iPizfTbT_9pDpk'
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~plugins/auth' },
+    { src: '~plugins/vue-the-mask' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

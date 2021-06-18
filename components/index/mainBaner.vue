@@ -12,10 +12,13 @@
               <div
                 class="
                   primary--text
-                  text-uppercase text-h3
-                  description
+                  text-uppercase
+                  text-sm-h3
+                  text-h4
                   text-center
                   font-weight-bold
+                  mt-16
+                  mt-md-0
                 "
               >
                 01 a 04 de julho
@@ -33,7 +36,7 @@
                   mb-6
                 "
               >
-                <b>Saiba como lucrar com investimentos esportivos</b> e como a nossa metodologia aterrorizou o mercado e vai transformara sua vida
+                <b>Saiba como lucrar com investimentos esportivos</b> e como a nossa metodologia aterrorizou o mercado e vai transformar a sua vida
               </div>
             </v-col>
           </v-row>
@@ -46,10 +49,10 @@
                   text-center text-body-2
                   description
                   mx-auto
-                  mb-6
+                  my-6
                 "
               >
-                <b>Evento online e gratuito.</b> Ao se cadastrar,você aceita os <u class="primary--text">Termos de Uso, Políticade Privacidade</u>, o uso de cookies e o envio decomunicações nos termos da LGPD.
+                <b>Evento online e gratuito.</b> Ao se cadastrar, você aceita o uso de cookies e o envio de comunicações nos termos da LGPD.
               </div>
             </v-col>
           </v-row>
