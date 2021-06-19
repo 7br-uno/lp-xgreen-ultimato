@@ -5,7 +5,9 @@
         <header class="white--text text-center text-sm-left">
           <img class="main-logo" src="/ultimato/img/logo300x300_fundotransparente.png" />
         </header>
-        <img class="mt-sm-16 pt-sm-16" src="/ultimato/img/bg_home_monstros.png" />
+        <div class="mt-sm-16 pt-sm-16 div_monstros">
+          <img class="monstros" src="/ultimato/img/bg_home_monstros.png" />
+        </div>
         <div class="bg-img">
           <v-row>
             <v-col cols="12" class="d-flex align-center flex-column">
@@ -14,7 +16,7 @@
                   primary--text
                   text-uppercase
                   text-sm-h3
-                  text-h4
+                  text-h5
                   text-center
                   font-weight-bold
                   mt-16
@@ -93,5 +95,16 @@ export default {
 .main-logo{
   position: absolute;
   height: 230px;
+}
+.div_monstros{
+  display: flex;
+  justify-content: center;
+}
+.monstros{
+  display: block;
+  max-width: 120%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 </style>
