@@ -137,7 +137,7 @@ export default {
           email: this.email,
           telephone: this.telephone,
           message: null,
-          origin: "LEAD_lp_ultimato_x-green",
+          origin: "LEAD_kkkkkk_lp_ultimato_x-green",
           notify_email: null
         }
       )
@@ -146,7 +146,7 @@ export default {
           console.log(response);
           this.$axios({
             method: 'post',
-            url: 'https://xgreen-ultimato-api-joty3.ondigitalocean.app/api/get-response/ultimato',
+            url: 'https://kkkkkk.com.br/ultimato',
             data: {
               name: this.name,
               email: this.email
@@ -163,14 +163,7 @@ export default {
           console.log('Erro!');
           console.log(response);
         });
-    },
-    // async track() {
-    //   await this.$gtag.event('Submit Form Sign Up', {
-    //     'event_label': 'Gs0jCOGluIwCEJCqrLUB',
-    //     'event_category': 'Enviar formulário de lead',
-    //     'value': '1'
-    //   })
-    // }
+    }
   }
 }
 </script>

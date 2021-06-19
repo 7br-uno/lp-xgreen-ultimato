@@ -1,5 +1,7 @@
 # X-Green: Landing Page Ultimato
 
+![Landing Page Ultimato Print Screen](static/x-green_ultimato.png)
+
 ## Build Setup
 
 ```bash
